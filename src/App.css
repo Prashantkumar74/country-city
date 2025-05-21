@@ -1,0 +1,88 @@
+.search-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  padding: 40px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(12px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card .search-input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px !important;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: var(--gray-color) !important;
+  }
+}
+
+.input-icon-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #ccc;
+  pointer-events: none;
+}
+
+
+.glass-card  .search-input:focus {
+  border-color: var(--gray-color);
+  box-shadow: none;
+}
+.css-13cymwt-control {
+  border: 1px solid #ccc !important;
+}
+.css-13cymwt-control:focus {
+  border-color: var(--gray-color) !important;
+}
+.css-13cymwt-control:hover {
+  border-color: var(--gray-color) !important;
+}
+.css-t3ipsp-control {
+  box-shadow: none !important;
+   border-color: var(--gray-color) !important;
+}
+
+
+.submit-btn {
+  padding: 12px;
+  background-color: var(--blue-color);
+  color: var(--green-color);
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  margin: auto;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.4s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--green-color);
+  color: var(--blue-color);
+}
+
+@media (max-width: 576px) {
+  .glass-card {
+    padding: 25px;
+  }
+}
